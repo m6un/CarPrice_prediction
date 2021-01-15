@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="enginesize <= 0.4\nmse = 79087166.8\nsamples = 86\nvalue = 14813.0", fillcolor="#fae6d7"] ;
+1 [label="highwaympg <= 0.4\nmse = 16710194.2\nsamples = 76\nvalue = 11613.0", fillcolor="#fcf2eb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="horsepower <= 0.5\nmse = 8911738.4\nsamples = 30\nvalue = 15548.4", fillcolor="#f9e3d3"] ;
+1 -> 2 ;
+3 [label="mse = 8006692.3\nsamples = 27\nvalue = 14831.6", fillcolor="#fae6d7"] ;
+2 -> 3 ;
+4 [label="mse = 30876.5\nsamples = 3\nvalue = 18813.9", fillcolor="#f7d6bf"] ;
+2 -> 4 ;
+5 [label="wheelbase <= 0.4\nmse = 4178135.1\nsamples = 46\nvalue = 8917.5", fillcolor="#fefcfb"] ;
+1 -> 5 ;
+6 [label="mse = 1433982.2\nsamples = 39\nvalue = 8229.1", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="mse = 3470936.8\nsamples = 7\nvalue = 12417.2", fillcolor="#fcefe6"] ;
+5 -> 7 ;
+8 [label="boreratio <= 1.0\nmse = 12436299.8\nsamples = 10\nvalue = 34492.8", fillcolor="#ea9a60"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="highwaympg <= 0.2\nmse = 5947617.2\nsamples = 9\nvalue = 33351.5", fillcolor="#eb9e67"] ;
+8 -> 9 ;
+10 [label="mse = 2592485.4\nsamples = 5\nvalue = 34762.9", fillcolor="#ea995e"] ;
+9 -> 10 ;
+11 [label="mse = 1751397.3\nsamples = 4\nvalue = 30764.0", fillcolor="#eda877"] ;
+9 -> 11 ;
+12 [label="mse = 0.0\nsamples = 1\nvalue = 40960.0", fillcolor="#e58139"] ;
+8 -> 12 ;
+}
